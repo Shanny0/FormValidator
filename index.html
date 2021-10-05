@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div class="form">
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Cognome</label>
+              <input type="text" class="form-control" id="cognome">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input type="email" class="form-control" id="idemail" placeholder="abc@gmail.com">
+            </div>
+            <div class="col-6">
+              <label for="inputAddress2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="pw1" >
+            </div>
+            <div class="col-6">
+                <label for="inputAddress2" class="form-label">Ripeti Password</label>
+                <input type="password" class="form-control" id="pw2">
+              </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Data nascita</label>
+              <input type="date" class="form-control" id="data">
+            </div>
+           
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck" >
+                 Termini e Condizioni
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="btn_submit">Sign in</button>
+            </div>
+          </form>
+
+          <div id="errorSummary">
+
+          </div>
+     </div>
+
+
+
+
+     <script src="./script.js"></script>
+</body>
+</html>
